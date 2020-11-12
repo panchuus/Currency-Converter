@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <script src="currency.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .box {
+            margin:auto;
+            background-color: maroon;
+            width: 460px;
+            height: 565px;
+            color: white;
+            margin-top: 35px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            
+        }
+
+        .option {
+            border-radius: 15px;
+            height: 45px;
+            width: 50%;
+            text-align: center;
+            color: black;
+            font-size: medium;
+
+        }
+        label
+		{
+			font-weight: bold; 
+            font-size: large;
+		}
+        p{
+            color:white;
+            font-size: medium;
+            margin-top:15px;
+        }
+
+    
+    
+
+</style>
+</head>
+
+<body>
+    
+    <div class="box">
+        <div class=" col-lg-12 col-md-12 col-sm-12 ">
+            <h1>Currency Converter</h1>
+            <center> 
+                    <label>Base Currency</label><br><br>
+                    <input class="option" type="text" id="base" placeholder="Enter the Base Currency" /><br><br> 
+                    <label>Output Currency</label><br><br>
+                    <input class="option" type="text" id="out" placeholder="Enter the Output Currency" /><br><br>
+                    <label>Amount</label><br><br>
+                    <input class="option" type="number" id="amount" placeholder="Enter the amount" /><br><br>
+                     <button class="btn btn-success option" onClick="convert()">
+                               Convert
+                     </button>
+                     <p id="output">
+    
+                    </p>
+    
+            </center>
+
+        </div>
+    
+    </div>
+
+
+</body>
+
+</html>
+
+
+
+
+<!------<html>
+    <head>
+        <title>Currency Convertor</title>
+        <script src="currency.js"></script>
+    </head>
+    <body>
+        <center>
+            <form border:"2px">
+                <label>Convert from</label><br>
+                <select onchange="currency1()"  id="from">
+                    <option>------Select Value---------</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="HKD">HKD</option>
+                    <option value="ISK">ISK</option>
+    
+                </select><br><br>
+                <label>Convert to</label><br>
+                <input type="text"   onchange="currency1()"  id="to"/><br><br>
+                <label>Amount</label><br>
+                <input type="text"  id="amount"/><br><br>
+                <label>Value is</label><br>
+                <p   id="output"></p><br><br>
+            </form>
+        </center>
+        
+    </body>
+</html>>
